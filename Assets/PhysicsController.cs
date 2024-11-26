@@ -6,7 +6,6 @@ public class PhysicsController : MonoBehaviour
     public float moveForce = 50f;
     public float maxSpeed = 15f;
     public float rotationSpeed = 100f;
-    public float steerAngle = 20f;
 
     public Transform frontWheel;
     public Transform rearWheel;
@@ -23,7 +22,11 @@ public class PhysicsController : MonoBehaviour
     private float velocityRot;
     public float smoothRotTime = 0.5f;
 
-    public ForceMode forceMode;
+    public Animator playerAnimator;
+    public Animator bicycleAnimator;
+    private static readonly int verticalInputId = Animator.StringToHash("VerticalInput");
+    private static readonly int verticalId = Animator.StringToHash("Vertical");
+
     void Awake()
     {
         rb = GetComponent<Rigidbody>();
@@ -34,6 +37,9 @@ public class PhysicsController : MonoBehaviour
         verticalInput = Input.GetAxis("Vertical");
         steerInput = Input.GetAxis("Horizontal");
         jumpKeyPressed = Input.GetKey(KeyCode.Space);
+        
+        playerAnimator.SetFloat(verticalInputId, math.abs(verticalInput));
+        bicycleAnimator.SetFloat(verticalId, math.abs(verticalInput));
     }
 
     void FixedUpdate()
@@ -61,31 +67,14 @@ public class PhysicsController : MonoBehaviour
         }
     }
 
-    // TODO(voven): fix freeze rotation
     // TODO(voven): clamp rotation by x and z
-    // private void HandleSteering()
-    // {
-    //     float rotationY = steerInput * rotationSpeed * math.abs(rb.velocity.magnitude * 1.3f) * Time.fixedDeltaTime;
-    //     currentRot = Mathf.SmoothDampAngle(currentRot, rotationY, ref velocityRot, smoothRotTime * Time.fixedDeltaTime);
-    //     transform.eulerAngles += new Vector3(0, currentRot, 0);
-    //     transform.rotation = Quaternion.Euler(0, transform.eulerAngles.y, 0);
-    // }
-    
     private void HandleSteering()
     {
-        // Calculate the desired rotation amount based on input and speed
         float rotationY = steerInput * rotationSpeed * Mathf.Abs(rb.velocity.magnitude * 1.3f) * Time.fixedDeltaTime;
-
-        // Calculate the target rotation angle
         float targetRotationY = rb.rotation.eulerAngles.y + rotationY;
 
-        // Smoothly interpolate to the target rotation angle
         currentRot = Mathf.SmoothDampAngle(rb.rotation.eulerAngles.y, targetRotationY, ref velocityRot, smoothRotTime);
-
-        // Create the new rotation quaternion
         Quaternion smoothedRotation = Quaternion.Euler(0f, currentRot, 0f);
-
-        // Apply the rotation to the Rigidbody
         rb.MoveRotation(smoothedRotation);
     }
     
