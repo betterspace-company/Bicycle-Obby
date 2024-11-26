@@ -1,0 +1,216 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f551465f5e41a1a48b1c662bf1d54ef3, type: 3}
+  m_Name: SettingsSO
+  m_EditorClassIdentifier: 
+  serializationData:
+    SerializedFormat: 2
+    SerializedBytes: 
+    ReferencedUnityObjects:
+    - {fileID: 4557920057124965782, guid: ec51c1de72c257d498ac64374f0f4caa, type: 3}
+    - {fileID: 8867906685589219258, guid: f5efca946b3343344b78f2244657934a, type: 3}
+    - {fileID: 4557920057124965782, guid: 8c0d8f03914e7a84492421f1fe1c8f6c, type: 3}
+    - {fileID: 2971592324565069339, guid: 6be49ea4e84b26f4e937c8dcb886fbe4, type: 3}
+    - {fileID: 2971592324565069339, guid: 433f43b4a7892fb4bbf0da3794273e14, type: 3}
+    - {fileID: 5589879594965205945, guid: 41834e837af6b014baac25692c7242bb, type: 3}
+    - {fileID: 2971592324565069339, guid: 8122357705248d54697b9e75875e9333, type: 3}
+    - {fileID: 5902183901929240344, guid: af4a34e35fa52f04cb6ad962ac9eafbc, type: 3}
+    - {fileID: 2971592324565069339, guid: 127150b24f932f64ebe0d8d44dd5b48c, type: 3}
+    - {fileID: 6717311148423996850, guid: c610f26f8e105484fb731dfd939ef4c9, type: 3}
+    - {fileID: 4557920057124965782, guid: dd07729e2f5477b498a1ad428c8b48cd, type: 3}
+    SerializedBytesString: 
+    Prefab: {fileID: 0}
+    PrefabModificationsReferencedUnityObjects: []
+    PrefabModifications: []
+    SerializationNodes:
+    - Name: _specialProps
+      Entry: 7
+      Data: 0|System.Collections.Generic.Dictionary`2[[System.String, mscorlib],[UnityEngine.GameObject,
+        UnityEngine.CoreModule]], mscorlib
+    - Name: comparer
+      Entry: 7
+      Data: 1|System.Collections.Generic.GenericEqualityComparer`1[[System.String,
+        mscorlib]], mscorlib
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 12
+      Data: 12
+    - Name: 
+      Entry: 7
+      Data: 
+    - Name: $k
+      Entry: 1
+      Data: CHECK-POINT
+    - Name: $v
+      Entry: 10
+      Data: 0
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 
+    - Name: $k
+      Entry: 1
+      Data: DOOR
+    - Name: $v
+      Entry: 10
+      Data: 1
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 
+    - Name: $k
+      Entry: 1
+      Data: FINISH
+    - Name: $v
+      Entry: 10
+      Data: 2
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 
+    - Name: $k
+      Entry: 1
+      Data: INVISIBLE-LAVA-LINE
+    - Name: $v
+      Entry: 10
+      Data: 3
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 
+    - Name: $k
+      Entry: 1
+      Data: INVISIBLE-LAVA-PLANE
+    - Name: $v
+      Entry: 10
+      Data: 4
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 
+    - Name: $k
+      Entry: 1
+      Data: INVISIBLE-WALL
+    - Name: $v
+      Entry: 10
+      Data: 5
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 
+    - Name: $k
+      Entry: 1
+      Data: JUMP-PAD
+    - Name: $v
+      Entry: 10
+      Data: 6
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 
+    - Name: $k
+      Entry: 1
+      Data: KEY
+    - Name: $v
+      Entry: 10
+      Data: 7
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 
+    - Name: $k
+      Entry: 1
+      Data: LAVA-PLANE
+    - Name: $v
+      Entry: 10
+      Data: 8
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 
+    - Name: $k
+      Entry: 1
+      Data: PrimaryPortal
+    - Name: $v
+      Entry: 10
+      Data: 9
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 
+    - Name: $k
+      Entry: 1
+      Data: SecondPortal
+    - Name: $v
+      Entry: 10
+      Data: 9
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 
+    - Name: $k
+      Entry: 1
+      Data: SPEEDBOOSTER-PLANE
+    - Name: $v
+      Entry: 10
+      Data: 10
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 13
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+  _enableStaticBatching: 1
+  _voxelPrefab: {fileID: 4843198010663297482, guid: b824f68cce9f5cf4190e9edfd718b2e8,
+    type: 3}
+  _paletteTexture2D: {fileID: 2800000, guid: feadc7bd2468b9e4791a5f75bdd5a74d, type: 3}
+  _paletteBase: {fileID: 2100000, guid: 40644b4f2ed7a4646b14eecaf96493b6, type: 2}
+  _propTemplate: {fileID: 5794830238337678047, guid: 31eadef962a7f0546b37284b6da30b60,
+    type: 3}
+  _speedBoosterTag: SpeedBooster
+  _jumpPadTag: JumpPad
+  _keyTag: Key
+  _doorTag: Door
+  _primaryPortalId: PrimaryPortal
+  _secondPortalId: PrimaryPortal
+  _coinTag: 
+  _finishTag: Finish
+  _lethalTag: Lava
+  _checkpointTag: CHECK-POINT
+  _postBuildCompression: 0

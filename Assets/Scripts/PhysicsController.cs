@@ -22,9 +22,7 @@ public class PhysicsController : MonoBehaviour
     private float velocityRot;
     public float smoothRotTime = 0.5f;
 
-    public Animator playerAnimator;
     public Animator bicycleAnimator;
-    private static readonly int verticalInputId = Animator.StringToHash("VerticalInput");
     private static readonly int verticalId = Animator.StringToHash("Vertical");
 
     void Awake()
@@ -38,7 +36,6 @@ public class PhysicsController : MonoBehaviour
         steerInput = Input.GetAxis("Horizontal");
         jumpKeyPressed = Input.GetKey(KeyCode.Space);
         
-        // playerAnimator.SetFloat(verticalInputId, math.abs(verticalInput));
         bicycleAnimator.SetFloat(verticalId, math.abs(verticalInput));
     }
 

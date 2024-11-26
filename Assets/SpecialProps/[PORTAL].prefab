@@ -434,6 +434,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3935729183597275714}
   - component: {fileID: 1986399619926731813}
+  - component: {fileID: 4175615905790923803}
   m_Layer: 22
   m_Name: '[PORTAL]'
   m_TagString: Untagged
@@ -475,6 +476,19 @@ MonoBehaviour:
   type: 0
   jumpPadProperties:
     jumpStren: 0
+--- !u!114 &4175615905790923803
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6717311148423996850}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e53e2ea4e9f516247b1fbb904fa2d412, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  trigger: {fileID: 8626559392782607996}
 --- !u!1 &6756629352302443067
 GameObject:
   m_ObjectHideFlags: 0
