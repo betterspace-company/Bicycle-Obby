@@ -601,7 +601,7 @@ SphereCollider:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1263585053373931650}
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 13400000, guid: 84326b63a80560c47bede4ce30602fce, type: 2}
   m_IncludeLayers:
     serializedVersion: 2
     m_Bits: 0
@@ -3042,7 +3042,7 @@ SphereCollider:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5817137487274625693}
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 13400000, guid: 84326b63a80560c47bede4ce30602fce, type: 2}
   m_IncludeLayers:
     serializedVersion: 2
     m_Bits: 0
@@ -3145,7 +3145,7 @@ Rigidbody:
   m_UseGravity: 1
   m_IsKinematic: 0
   m_Interpolate: 1
-  m_Constraints: 80
+  m_Constraints: 112
   m_CollisionDetection: 1
 --- !u!114 &1052475618443366086
 MonoBehaviour:
@@ -3159,8 +3159,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9bdc02339f368de42826bafa0961db56, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  moveForce: 7500
-  maxSpeed: 25
+  moveForce: 5000
+  maxSpeed: 20
   rotationSpeed: 75
   frontWheel: {fileID: 2694901650816459229}
   rearWheel: {fileID: 5264489754135517319}
@@ -3168,8 +3168,15 @@ MonoBehaviour:
   wheelRotationSpeed: 10
   jumpForce: 100
   smoothRotTime: 0.1
-  playerAnimator: {fileID: 0}
   bicycleAnimator: {fileID: 690296247960766458}
+  xRotSpeed: 200
+  xDifference: 10
+  gravity: 50
+  acceleration: 30
+  maxTiltAngle: 45
+  smoothing: 30
+  raycastDistance: 10
+  bikeTiltIncrement: 0.09
 --- !u!95 &690296247960766458
 Animator:
   serializedVersion: 5
